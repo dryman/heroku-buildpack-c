@@ -19,7 +19,7 @@ cd $BUILD_DIR
 
 # configure
 if [ -f configure ]; then
-  echo "-----> Configuring"
+  echo "-----> Configuring --srcdir=$BUILD_DIR"
   ./configure --enable-run-from-source --srcdir=$BUILD_DIR 2>&1 | indent
 fi
 
