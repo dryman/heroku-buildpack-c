@@ -17,6 +17,8 @@ function indent() {
 
 cd $BUILD_DIR
 
+./autogen.sh
+
 # configure
 if [ -f configure ]; then
   echo "-----> Configuring --srcdir=$BUILD_DIR"
